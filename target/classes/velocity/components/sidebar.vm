@@ -1,0 +1,52 @@
+<div class="navbar-menu">
+    <div class="navbar" id="navbar">
+        <div>
+            <div class="title">
+                <a href="/"><h1 class="title">Instagram 2</h1><a>
+            </div>
+            <div class="search">
+                <div>
+                    <button type="submit" id="search">
+                        <i class="bx bx-search btn-search"></i>
+                    </button>
+                    <input type="text" placeholder="Search user" name="search" id="searchInput">
+                </div>
+            </div>
+            <div class="profile">
+                <a href="/profile/" class="navbar-link">
+                    <i class="bx bx-user"></i>
+                    <span class="link-text">Profile</span>
+                </a>
+            </div>
+            <div class="add-image">
+                <a href="/upload" class="navbar-link">
+                    <i class="bx bx-image-add"></i>
+                    <span class="link-text">Add image</span>
+                </a>
+            </div>
+            <div class="about-us">
+                <a href="#" class="navbar-link">
+                    <i class="bx bx-info-circle"></i>
+                    <span class="link-text">About us</span>
+                </a>
+            </div>
+        </div>
+        <div class="logout">
+        #if($username)
+            <a href="#" class="profile">
+                <span class="username">$username</span></a>
+            <a href="/logout/" class="logout">
+                <i class="bx bx-log-out"></i>
+            </a>
+        #else
+            <a href="/login/" class="logout">
+                <i class="bx bx-log-in"></i>
+            </a>
+        #end
+        </div>
+
+    </div>
+    <div class="menu" id="btnMenu">
+        <i class="bx bx-menu"></i>
+    </div>
+</div>

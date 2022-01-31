@@ -1,0 +1,131 @@
+.navbar-menu {
+    height: 100%;
+    background-color: #383838;
+}
+.navbar-menu .menu {
+    background-color: #383838;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.navbar-menu .menu i {
+    font-size: 30px;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    background-color: #383838;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.navbar .title .title {
+    font-size: 25px;
+    margin: 10px 0;
+    text-align: center;
+}
+.navbar h1.title::after {
+    content:"";
+    display: block;
+    width: 100%;
+    border: 1px solid #fff;
+}
+
+.navbar .search {
+    width: 100%;
+}
+.navbar .search > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .search button {
+    background-color: #585858;
+    border-radius: 10px 0px 0px 10px;
+}
+.navbar i {
+    padding: 7px 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.navbar .search input {
+    width: 80%;
+    padding: 10px 5px;
+    border-radius: 0px 10px 10px 0px;
+    outline: none;
+    color: #000;
+}
+.navbar .search input:focus {
+    outline: none;
+}
+
+.navbar div > div,
+.navbar div > div a   {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 10px 0px;
+}
+.navbar div.title {
+    display: block;
+}
+.navbar > div > div.profile > a:first-child{
+    width: 0px;
+}
+.navbar > div a{
+    width: 90%;
+    border-radius: 20px
+}
+.navbar > div a:hover {
+    background-color: #686868;
+    color: #000;
+}
+.navbar  div.title a:hover {
+    background-color: #383838;
+}
+.navbar div > div a span {
+    display: block;
+    width: 80%;
+    padding: 10px 0px;
+}
+
+.navbar > .logout {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.navbar > .logout a {
+    outline: none;
+    text-decoration: none;
+}
+.navbar .username{
+    padding: 10px;
+    font-size: 20px;
+}
+.navbar .logout .profile,
+.navbar .logout .logout{
+    width: auto;
+}
+.active {
+    overflow: auto;
+    left: 0px
+}
+.Menu-active {
+    left: 170px!important;
+    transform: rotate(90deg);
+}
