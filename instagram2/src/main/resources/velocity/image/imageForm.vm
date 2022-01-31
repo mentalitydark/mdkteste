@@ -1,0 +1,14 @@
+#parse("/velocity/layout.vm")
+#@mainLayout()
+    <form class="formImage" action="/upload/" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="uploadedFile">Image</label>
+            <input type="file" name="uploadedFile" id="uploadedFile">
+        </div>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" placeholder="name" name="name" id="name">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+#end
